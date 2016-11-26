@@ -1,0 +1,120 @@
+body {
+    font:12px "lucida Grande",Verdana,"Microsoft YaHei";
+}
+.login{
+    width: 334px;
+    border:0px;
+    background-color: #ffffff;
+    margin:0 auto;
+    position: relative;
+}
+.login .header{
+    position  absolute;
+    left:0;
+    height: 50px;
+    font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+    border-bottom: 1px solid #c0cdd9;
+    background-color: #f9fbfe;
+    overflow: hidden;
+}
+.header .switch{
+    left: 53px;
+    height: 46px;
+}
+
+.header .switch #switch_qlogin{
+    margin-right: 54px;
+}
+
+.loginTips{
+    margin-bottom: -26px;
+    position: relative;
+    min-height: 28px;
+    height: auto;
+    padding-top: 4px;
+}
+
+.header .switch .switch_bottom{
+    bottom: 0px;
+    border-bottom: 1px solid #465767;
+}
+/*登录框底部*/
+.web_qr_login .bottom{
+    width: 282px;
+    right: 12px;
+}
+.bottom{
+    margin-bottom: 15px;
+    width: 284px;
+    right: 12px;
+    bottom:2px;
+}
+/*登录框体*/
+.web_qr_login{
+    height: 289px;
+    width: 304px;
+    margin:0 auto;
+}
+/*登陆界面*/
+.web_login{
+    width:306px;
+    padding-bottom: 0;
+    min-height: 289px;
+}
+/*输入框体*/
+.web_login .inputOuter{
+    background: none;
+    border: 1px solid #96a5b4;
+    height: 38px;
+    width: 282px;
+    border-radius: 2px;
+}
+/*登录*/
+.web_login .submit{
+    margin-top: 23px;
+    height: 177px;
+    position: relative;
+}
+/*登录按钮*/
+.web_login .login_button{
+    right: 0;
+    top:25px;
+    background-color: #5a98de;
+    outline: none;
+    border-radius: 3px;
+    position: absolute;
+    left:0;
+}
+/*登录按钮优化*/
+.web_login .login_button .btn{
+    background: none;
+    height: 40px;
+    line-height: 39px;
+    width: 100%;
+    outline: none;
+    font-weight: normal;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+/*勾选*/
+.web_login .low_login{
+    left: 0;
+    top:-9px;
+    position: absolute;
+}
+/*勾选框*/
+.web_login .low_login .uncheck{
+    height: 16px;
+    width:16px;
+    border:1px solid #4892e7;
+    float:left
+}
+/*勾选提醒*/
+.web_login .low_login .low_login_wording{
+    height: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}

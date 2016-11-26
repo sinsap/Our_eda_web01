@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css" content="text/html; charset=utf-8">
+        body, ul {
+            margin: 0
+        }
+        label{
+            cursor: default;
+        }
+        html{
+            overflow: hidden;
+        }
+        body{
+            font-family: Tahoma, Verdana, Arial, 宋体;
+            font-size: 12px;
+        }
+        ul{
+            padding:0;
+        }
+        input, textarea, select, button {
+            font-size: inherit;
+            font-family: inherit;
+        }
+        a {
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+        ul li {
+            list-style-type: none
+        }
+        .header{
+            height: 50px;
+            border-bottom: 1px solid #e2e2e2;
+            position: relative;
+            font-family: "微软雅黑";
+        }
+        .login{
+            border: 0;
+            background-color: #ffffff;
+        }
+        body,ul{
+            margin:0;
+        }
+        .header .switch{
+            height: 45px;
+            position: absolute;
+            left:60px;
+            bottom:0;
+            font-size: 16px;
+        }
+        .header.switch #switch_qlogin{
+            margin:85px;
+        }
+        .header .switch .switch_btn{
+            color: #999;
+            display: inline-block;
+            height: 45px;
+            line-height: 45px;
+            outline: 0;
+        }
+        .header .switch .switch_btn_focus{
+            color: #333;
+            display: inline-block;
+            height: 45px;
+            line-height: 45px;
+            outline: 0;
+        }
+        .header .switch .switch_btn:hover{
+            color: #333;
+            text-decoration: none;
+        }
+        /*光标置于文字上时下划线设置*/
+        .header .switch .switch_btn_focus:hover{
+            text-decoration: none;
+        }
+        /*超链接文字下划线的设置*/
+        a:-webkit-any-link{
+            color: webkit link;
+            text-decoration: underline;
+            cursor: auto;
+        }
+        div{
+            display: block;
+        }
+        /*登录框中间部分的上部*/
+        .loginTips{
+            position: absolute;
+            height: 50px;
+            z-index: 100;
+        }
+        /*登录框头部的底部*/
+        .header .switch .switch_bottom{
+            position: absolute;
+            bottom: -1px;
+            border-bottom: 2px solid #848484;
+        }
+        /*登录框体*/
+        .web_qr_login{
+            position: relative;
+            height: 265px;
+            overflow: hidden;
+        }
+        /*框体展示*/
+        .authLogin, .web_qr_login .web_qr_login_show{
+            position: absolute;
+            top: 0;
+        }
+        /*登录界面*/
+        .web_login{
+            width: 370px;
+            padding-bottom: 65px;
+            position: relative;
+        }
+        /*登陆界面上部填充*/
+        .web_login .tips{
+            height: 30px;
+            width: 280px;
+            position: relative;
+            margin: 0 auto;
+            z-index: 11;
+        }
+        /*登录表格*/
+        .web_login .login_form{
+            width: 284px;
+            margin:0 auto;
+        }
+        /*第一个输入框*/
+        .web_login .uinArea{
+            height: 50px;
+            position: relative;
+            z-index: 10;
+        }
+        /*第一个搜索框呈现内容*/
+        .web_login .input_tips, .web_login .input_tips_focus{
+            top:12px;
+            position: absolute;
+            left: 13px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #aaa;
+            cursor: text;
+        }
+        /*第二个输入框*/
+        .web_login .pwdArea{
+            height: 50px;
+            position: relative;
+            z-index: 3;
+        }
+        /*登陆框底部*/
+        .bottom{
+            height: 16px;
+            margin-bottom: 8px;
+            width: 360px;
+            bottom: 0;
+            position: absolute;
+            text-align: right;
+            font-size: 12px;
+        }
+        /*底部字样*/
+        .bottom .link{
+            color: #225592;
+            text-decoration: none;
+        }
+        /*底部字的间隔*/
+        .bottom .dotted{
+            color: #bfbfbf;
+            margin:0 3px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<div class="login">
+    <div class="header">
+        <div class="switch">
+            <a class="switch_btn"  id="switch_qlogin">快速登录</a>
+            <a class="switch_btn_focus" >帐号密码登录</a>
+            <div class="switch_bottom"></div>
+        </div>
+    </div>
+    <div class="loginTips">
+    </div>
+    <div class="web_qr_login" style="display: block;height: 330px">
+        <div class="web_qr_login_show">
+            <div class="web_login">
+                <div class="tips"></div>
+                <div class="login_form">
+                    <form name="loginform" style="margin: 0;">
+                        <div class="uinArea">
+                            <label class="input_tips" for="u" style="display: block">支持QQ号/邮箱/手机号登录</label>
+                            <div class="inputOuter"></div>
+                        </div>
+                        <div class="pwdArea">
+                            <label class="input_tips" for="u" style="display: block">QQ密码</label>
+                            <div class="inputOuter"></div>
+                        </div>
+                        <div class="submit">
+                            <a class="login_button" >
+                                <input type="submit" value="登 录" class="btn">
+                            </a>
+                            <div title="为了确保您的信息安全，不建议在网吧等公共环境勾选此项" class="low_login">
+                                <a class="uncheck" style="cursor: pointer"></a>
+                                <label class="low_login_wording">下次自动登录</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom" style="display: block">
+                    <a class="link" href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account" target="_blank" >忘了密码 ?</a>
+                    <span class="dotted">|</span>
+                    <a href="http://zc.qq.com/chs/index.html?type=1" class="link" target="_blank">注册新帐号</a>
+                    <span class="dotted">|</span>
+                    <a class="link" href="http://support.qq.com/discuss/350_1.shtml" target="_blank">意见反馈</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <
+</div>
+</body>
+</html>

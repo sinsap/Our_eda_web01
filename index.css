@@ -1,0 +1,157 @@
+body, p, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend {
+    margin: 0;
+}
+a {
+    color: #225592;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+body, input, textarea, select, button {
+    font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+}
+
+body {
+    font-size: 12px;
+}
+body,p{
+    margin: 0;
+}
+html{
+    overflow: auto;
+}
+html, body {
+    background-color: #fff;
+}
+div{
+    display: block;
+}
+.gray{
+    color: #868686;
+}
+/*这是上部的条*/
+.header{
+    height: 62px;
+    overflow: hidden;
+    zoom: 1;
+    border-bottom: 1px solid #d6dfea;
+    background: #eff4fa;
+}
+/*填充内容*/
+.container{
+    min-height: 500px;
+}
+
+.header_logo{
+    float: left;
+    width: 182px;
+    height: 35px;
+    margin-top:14px;
+    margin-left: 40px;
+    text-indent: -9999em;
+    background-size: 182px 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url("https://rescdn.qqmail.com/zh_CN/htmledition/images/logo/qqmail/qqmail_logo_default_35h206ff1.png");
+}
+.header_link{
+    overflow: hidden;
+    margin-top: 16px;
+    padding-right: 16px;
+    line-height: 30px;
+    text-align: right;
+    color: #b6b6b6;
+}
+.content{
+    width: 960px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+.content_wrapper{
+    min-height: 372px;
+    padding-top: 40px;
+    margin:0 20px 60px 25px;
+    *zoom: 1;
+    height: 389px;
+}
+.login_container {
+    float: right;
+    border: 1px solid #a0b1c4;
+    width: 334px;
+    height: 387px;
+    background-color: #fff;
+    position: relative;
+    z-index: 12;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*登陆界面图片*/
+.login_pictures{
+    position: relative;
+    margin-right: 395px;
+}
+/*登陆界面图片元素*/
+.login_pictures_picture{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+/*登陆界面文字*/
+.login_pictures_txt{
+    padding-top: 25px;
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+/*登陆界面标题*/
+.login_pictures_title{
+    line-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #6f95c8;
+}
+/*处理顶部和底部*/
+.header a, .footer a {
+    color: #1d5494;
+}
+@media (min-width: 1070px) {
+    .header, .footer {
+        min-width: 1070px;
+    }
+
+    .header_logo {
+        margin-left: 40px;
+    }
+
+    .header_link {
+        padding-right: 40px;
+    }
+}
+/*底部*/
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    clear: both;
+    line-height: 36px;
+    text-align: center;
+    color: #b6b6b6;
+    background-color: #eff4fa;
+    border-top: 1px solid #d6dfea;
+}
+@media (max-height: 680px) {
+    .footer {
+        position: static;
+    }
+}
